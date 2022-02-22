@@ -1,0 +1,83 @@
+body {
+	background: black;
+}
+
+
+.wall {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+}
+
+#text {
+	color: white;
+	position: absolute;
+	left: 40%;
+	top: 300px;
+	font-size: 5vw;
+	top: calc(50% - 24px); 
+    text-align: center;
+
+}
+
+
+
+        /*, body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            color: lightyellow;
+        }*/
+
+        #overlay {
+            position: absolute;
+            z-index: 10;
+            background: linear-gradient(-45deg, rgba(238, 119, 82, 0.6), rgba(231, 60, 126, 0.6),rgba(35, 166, 213, 0.6), rgba(35, 213, 171, 0.6));
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            width: 100vw;
+            height: 600vh;
+        }
+
+        #btnContainer {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            z-index: 30;
+            width: 96px;
+            height: 24px;
+            border: 2px solid black;
+            border-radius: 10%;
+            background: transparent;
+        }
+        
+       
+
+        #scrollwall {
+            width: 100vw;
+            height: 100vh;
+            overflow: ;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .scroller {
+            width: 100%;
+            height: 5%;
+            font-size: 4.2vh;
+        }
+
